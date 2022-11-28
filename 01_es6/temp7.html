@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title> filter </title>
+    <script>
+        let arr = [10,20,30,40,50]
+        let data = [
+            {id:1 , name:'홍길동', age:20},
+            {id:2 , name:'김태리', age:25},
+            {id:3 , name:'강호동', age:30},
+            {id:4 , name:'김다미', age:18},
+        ]
+
+        // filter 결과는 배열이다
+        const re1 = arr.filter(item => {
+            return item > 30
+        })
+        console.log(re1)
+        console.log('\n')
+
+        const re2 = arr.filter( item => item >= 40)
+        console.log(re2)
+        console.log('\n')
+
+        // 50을 삭제한 나머지만 출력하기 (삭제)
+        const re3 = arr.filter(item => item < 50 )
+        const re4 = arr.filter(item => item !== 50 )
+        console.log(re3)
+        console.log(re4)
+        console.log('\n')
+
+        // data1 => data에서 id가 2번만 출력
+        const data1 = data.filter(item => item.id === 2 )
+        console.log(data1)
+        console.log('\n')
+
+        // data1 => data에서 id가 2번 삭제한 나머지만
+        const data2 = data.filter(item => item.id !== 2 )
+        console.log(data2)
+        console.log('\n')
+
+
+    </script>
+  </head>
+  <body>
+    <pre>
+        Array.prototype.filter()
+        filter() 메서드는 조건에 맞는거에 대한 새로운 배열로 반환합니다.
+
+        구문
+        arr.filter(callback(element[, index[, array]])[, thisArg])
+
+        arr.filter(function(현재값){
+            return 조건
+        })
+
+        arr.filter((현재값) => {
+            return 조건
+        })
+
+        arr.filter((현재값) => return 조건)
+
+        callback : 함수. 
+        true를 반환하면 요소를 유지하고, false를 반환하면 버립니다.
+
+        다음 세 가지 매개변수를 받습니다.
+
+        element : 현재 요소.
+
+        반환 값
+        테스트를 통과(조건)한 요소로 이루어진 새로운 배열.
+    </pre>
+  </body>
+</html>

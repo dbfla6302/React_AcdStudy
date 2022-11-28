@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title> Array map </title>
+    <script>
+        let arr = [10,20,30,40,50]
+        arr.map((item, idx) => {
+            return console.log(item, idx)
+        });
+
+        console.log('\n')
+        arr.map((item, idx) => console.log(item, idx))
+
+        let data = [
+            {id:1 , name:'홍길동', age:20},
+            {id:2 , name:'김태리', age:25},
+            {id:3 , name:'강호동', age:30},
+            {id:4 , name:'김다미', age:18},
+        ]
+        //data[0].id, data[0].name
+        data.map((item, index) => {
+            return console.log(item.id, item.name, item.age)
+        });
+        console.log('\n')
+        data.map((item,index) => console.log(item.id, item.name, item.age));
+        
+    </script>
+  </head>
+  <body>
+    <pre>
+        Array.prototype.map()
+        map() 메서드는 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아 새로운 배열을 반환합니다.
+
+        구문
+            arr.map(callback(currentValue[, index[, array]])[, thisArg])
+
+            arr.map(function(현재값, 인덱스){
+                return 반환값
+            });
+
+            arr.map((현재값, 인덱스) => {
+                return 반환값
+            });
+
+            반환값 1개면 (결과값)
+            arr.map((현재값, 인덱스) => 반환값);
+        
+        매개변수
+        새로운 배열 요소를 생성하는 함수. 다음 세 가지 인수를 가집니다.
+        callback : 함수 (필수)
+        currentValue : 현재값 (필수)
+        index Optional : 인덱스. 0,1 (선택)
+
+        반환 값
+        배열의 각 요소에 대해 실행한 callback의 결과를 모은 새로운 배열.
+    </pre>
+  </body>
+</html>

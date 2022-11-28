@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>템플릿 리터널 ``</title>
+    <script>
+      let name = "김태리";
+      let age = 25;
+      const addr = "서울";
+
+      const msg =
+        "이름은" +
+        name +
+        "이고 나이는" +
+        age +
+        "이며 주소는" +
+        addr +
+        "입니다.";
+
+      console.log(msg);
+      console.log("\n");
+
+      const msg1 = `이름은 ${name} 이고 나이는 ${age} 이며 주소는 ${addr} 입니다`;
+      console.log(msg1);
+
+      let x = 10,
+        y = 20,
+        sum = 0;
+      sum = x + y;
+      document.write(`두수의 합 : ${x} 와 ${y} 의 합은 ${sum}`);
+    </script>
+  </head>
+  <body>
+    <pre>
+        형식 : ``
+        `문자열 숫자 ${변수}`
+    </pre>
+  </body>
+</html>

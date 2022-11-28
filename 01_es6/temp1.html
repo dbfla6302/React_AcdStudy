@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>1. let, const</title>
+    <script>
+      const a = 100;
+      //   a = 500;
+      console.log(a);
+      {
+        const a = 200;
+        console.log(a);
+        {
+          const a = 300;
+          console.log(a);
+          {
+            const a = 400;
+            console.log(a);
+          }
+          console.log(a);
+        }
+        console.log(a);
+      }
+      console.log(a);
+    </script>
+  </head>
+  <body>
+    <pre>
+        let :  재정의가 가능
+        let 변수 
+        변수 = 값
+
+        const :  한번만 선언, 재할당 할 수 없다
+        const 변수 = 값
+    </pre>
+  </body>
+</html>

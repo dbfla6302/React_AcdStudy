@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title> 스프레드연산자 </title>
+    <script>
+      let arr = ['김다미', '김태리', '유재석']
+      let arr1 = arr.concat()
+      let arr2 = [...arr]
+      console.log(arr1)
+      console.log(arr2)
+      console.log('\n')
+
+      let arr3 = arr.concat('강호동','최우식')
+      let arr4 = [...arr, '강호동','최우식']
+      console.log(arr3)
+      console.log(arr4)
+      console.log('\n')
+
+      let dog = {
+        name: '치와와',
+        age: 2,
+        addr: '서울'
+      }
+
+      // 갱신, 수정
+      let dog1 = {...dog, name:'푸들', age:5}
+      console.log(dog1)
+
+    </script>
+  </head>
+  <body>
+    <pre>
+
+    </pre>
+  </body>
+</html>

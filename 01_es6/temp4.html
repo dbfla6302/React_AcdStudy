@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <script>
+        const make1 = () => {
+            console.log('make1')
+        }
+        make1()
+
+        // const make2 = num => {
+        const make2 = (num) => {
+            console.log('make2', num)
+        }
+        make2(100)
+        
+        const make3 = (num) => {
+           return num * 2
+        }
+
+        //일급함수
+        //const make = num => num * 2
+        
+        const re = make3(100)
+        console.log('make3' , re)
+    </script>
+  </head>
+  <body>
+    <pre>
+
+    </pre>
+  </body>
+</html>

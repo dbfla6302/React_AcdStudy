@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title> 구조분해 </title>
+    <script>
+      const man = {
+        name: '강호동'    ,
+        age: 20,
+        addr: '서울'
+      }
+      // man.name, man.age / man['name'], man['age']
+      const {name, age, addr} = man
+      console.log( name, age, addr)
+
+      const dog = {
+        name1: '치와와'    ,
+        age1: 5
+      }
+      // dog.name1 , dog.age1
+      const { name1 , age1 } = dog
+      console.log( name1, age1 )
+
+    </script>
+  </head>
+  <body>
+    <pre>
+
+    </pre>
+  </body>
+</html>

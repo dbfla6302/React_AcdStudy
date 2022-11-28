@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title> find </title>
+    <script>
+      let arr = [10,20,30,40,50]
+      let data = [
+        {id:1, name:'강호동'},
+        {id:2, name:'김철수'},
+        {id:3, name:'김다미'},
+        {id:4, name:'유재석'},
+      ]
+      
+      let re1 = arr.find( item => item > 30)
+      console.log(re1); //결과1개
+
+      let re2 = data.find( item => item.id === 2)
+      console.log(re2)
+
+      let re3 = data.findIndex( item => item.name === '김다미')
+      console.log(re3)
+      
+    </script>
+  </head>
+  <body>
+    <pre>
+      Array.prototype.find()
+      조건에 맞는 결과 **값**을 반환합니다. 
+
+      구문
+        arr.find(callback[, thisArg])
+        arr.find( 현재값 => 조건 )
+
+        매개변수
+        callback : 실행할 함수. 아래의 세 인자를 받습니다._ 
+        element _ : 현재 요소.
+
+        반환 값
+        주어진 판별 함수를 만족하는 첫 번째 요소의 값.
+        결과 1개만
+        값
+    </pre>
+  </body>
+</html>

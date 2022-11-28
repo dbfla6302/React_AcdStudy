@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title> react에서 삼항, &&, ||</title>
+    <script>
+        let done1 = true
+        let done2 = false
+        let done3 = undefined
+
+        const re1 = done1 === true ? '참' : '거짓'
+        console.log('결과 : %s', re1)
+        
+        const re2 = done1 && '나는 참이다'
+        console.log('결과 : %s', re2)
+        
+        const re3 = done2 || '거짓'
+        console.log('결과 : %s', re3)
+
+        const re4 = done3 || '값이 존재하지 않는다'
+        console.log('결과 : %s', re4)
+    </script>
+  </head>
+  <body>
+    <pre>
+        삼항연산자
+        (조건) ? 참 : 거짓
+
+        (조건) && ( 참의결과 )  
+
+        (조건) || ( 거짓의결과 )
+
+        react 에서는 같다 === / !==
+
+        다중 if 처럼 사용해야 할 경우
+        조건1 && 결과1
+        조건2 && 결과2
+        조건3 && 결과3
+        조건4 && 결과4
+    </pre>
+  </body>
+</html>

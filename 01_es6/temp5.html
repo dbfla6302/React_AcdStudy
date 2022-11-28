@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title> Array </title>
+    <script>
+        // 원본이 변경된다
+        let arr = [10,20,30]
+        arr.push(40)
+        arr.push(50)
+        arr.push(60)
+        console.log(arr)
+
+        // 불변성 - 원본유지 / 사본
+        let arr1 = [10,20,30]
+        let arr2 = arr1.concat(40,50,60)
+
+        console.log(arr1)
+        console.log(arr2)
+
+    </script>
+  </head>
+  <body>
+    <pre>
+        Array.prototype.concat()
+        concat() 메서드는 인자로 주어진 배열이나 값들을 기존 배열에 합쳐서 새 배열을 반환합니다.
+
+        - 기존배열을 변경하지 않습니다.
+        - 추가된 새로운 배열을 반환합니다.
+    </pre>
+  </body>
+</html>
