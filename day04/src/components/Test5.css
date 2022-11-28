@@ -1,0 +1,77 @@
+.wrap {
+    width: 500px;
+    margin: 20px auto;
+}
+
+.wrap p {
+    font-size: 20px;
+    line-height: 2;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.wrap .test {
+    border: 3px solid #000;
+}
+
+.wrap .on {
+    background: pink;
+}
+
+.wrap .on1 {
+    background: tomato;
+    text-decoration: line-through;
+    color: green
+}
+
+.wrap div {
+    margin-top: 15px;
+}
+
+.wrap div button {
+    padding: 15px 25px;
+    margin-right: 15px;
+}
+caption {
+    position: absolute;
+    text-indent: -9999em;
+}
+
+.list {
+    width: 600px;
+    margin: 10px auto;
+}
+
+.list .num {
+    width: 10%;
+}
+
+.list .name {
+    width: 20%;
+}
+
+.list .age {
+    width: 25%;
+}
+
+.list .addr {
+    width: 20%;
+}
+
+.list .consent {}
+
+.list th,
+.list td {
+    border: 1px solid #000;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.list tbody tr:nth-child(odd) {
+    background: beige;
+}
+
+.list tbody tr:nth-child(even) {
+    background: bisque;
+}
