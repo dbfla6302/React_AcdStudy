@@ -1,0 +1,40 @@
+// 변수선언
+$red: red;
+$hotpink: hotpink;
+$pink: pink;
+$green: yellowgreen;
+$teal: cornflowerblue;
+
+@mixin make( $size ) {
+    $width: 100px;
+    @if $size % 2 == 0 {
+        $width: $width+20;
+    } @else if $size % 3 == 0 {
+        $width: $width-20;
+    } @else{
+        $width: $width;
+    }
+    $width: $width;
+    height: 40px * 2;
+    line-height: 40px * 2;
+    font-size: 18px;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.2) rotate(30deg);
+    }
+}
+
+.wrap{
+    margin: auto; display: flex; justify-content: center;
+    .box{
+        border: 1px solid #fff;
+        text-align: center;
+        width: 100px; line-height: 60px;
+        // &:선택자
+        &.red{ background: $red; @include make(10) }
+        &.hotpink{ background: $hotpink; @include make(20) }
+        &.pink{ background: $pink; @include make(30) }
+        &.green{ background: $green; @include make(40) }
+        &.teal{ background: $teal; @include make(50) }
+    }
+}
