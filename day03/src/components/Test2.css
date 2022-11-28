@@ -1,0 +1,6 @@
+.wrap{display: flex;width: 500px;justify-content: space-between;}
+.wrap article{width: 100px;height: 100px;border: 1px solid #000;}
+.green{background: green;}
+.pink{background: pink;}
+.crimson{background: crimson;}
+.palegreen{background: palegreen;}
